@@ -1,9 +1,11 @@
 package com.daza.code;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class Prueba {
+
 }
 
 class FizzBuzzTest {
@@ -70,5 +72,43 @@ class CountTripletsTest {
     System.out.println(countTriplets.process1(values, 3));
     System.out.printf("My second solution %n");
     System.out.println(countTriplets.process2(values, 3));
+  }
+}
+
+class FrequencyQueriesTest {
+  public static void main(String[] args) {
+    List<Integer> value1 = Arrays.asList(1,1);
+    List<Integer> value2 = Arrays.asList(1,2);
+    List<Integer> value3 = Arrays.asList(1,3);
+    List<Integer> value4 = Arrays.asList(1,3);
+    List<Integer> value5 = Arrays.asList(3,2);
+    List<Integer> value6 = Arrays.asList(3,3);
+    List<Integer> value7 = Arrays.asList(3,3);
+    List<Integer> value8 = Arrays.asList(3,1);
+    List<List<Integer>> values = new ArrayList<>();
+    values.add(value1);
+    values.add(value2);
+    values.add(value3);
+    values.add(value4);
+    values.add(value5);
+    values.add(value6);
+    values.add(value7);
+    values.add(value8);
+
+    FrequencyQueries frequencyQueries = new FrequencyQueries();
+    List<Integer> result = frequencyQueries.process(values);
+    result.forEach(System.out::print);
+  }
+}
+
+class ArrayManipulationTest {
+
+  public static void main(String[] args) {
+    int arrayLength = 5;
+    int[][] queries = new int[][] {{1, 2, 100}, {2, 5, 100}, {3, 4, 100}};
+    ArrayManipulation clazz = new ArrayManipulation();
+    long result = clazz.process(arrayLength, queries);
+    //long result = clazz.processv2(arrayLength, queries);
+    System.out.println(result);
   }
 }
