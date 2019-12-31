@@ -112,3 +112,19 @@ class ArrayManipulationTest {
     System.out.println(result);
   }
 }
+
+class NewYearChaosTest {
+  public static void main(String[] args) {
+    //int[] queueWithBribes = {2, 1, 5, 3, 4};
+    int[] queueWithBribes = {1, 2, 5, 3, 7, 8, 6, 4};
+    NewYearChaos newYearChaos = new NewYearChaos();
+    newYearChaos.minimumBribes(queueWithBribes);
+    System.out.println(Arrays.toString(queueWithBribes));
+
+//    int[] queueWithBribes = {1, 2, 7, 3, 5, 8, 6, 4};
+//    int[] queueWithBribes = {1, 2, 3, 7, 5, 8, 6, 4};
+//    int[] queueWithBribes = {1, 2, 3, 7, 5, 4, 6, 8};
+//    int[] queueWithBribes = {1, 2, 3, 7, 5, 6, 4, 8};
+
+  }
+}
