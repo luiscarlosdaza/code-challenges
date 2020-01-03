@@ -21,3 +21,12 @@ class InsertSortTest {
     insertionSort.process(array);
   }
 }
+
+class SelectionSortTest {
+  public static void main(String[] args) {
+    int[] array = {5, 4, 3, 2};
+    SelectionSort selectionSort = new SelectionSort();
+    selectionSort.process(array);
+    System.out.println(Arrays.toString(array));
+  }
+}
