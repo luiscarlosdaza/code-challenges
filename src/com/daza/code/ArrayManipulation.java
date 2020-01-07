@@ -1,9 +1,8 @@
 package com.daza.code;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
+//https://www.hackerrank.com/challenges/crush/problem
 public class ArrayManipulation {
 
   /**
@@ -30,6 +29,7 @@ public class ArrayManipulation {
 
   /**
    * Time complexity: O(n+m).
+   * https://www.youtube.com/watch?v=hDhf04AJIRs
    */
   public long processv2(int arrayLength, int[][] queries) {
     long[] outputArray = new long[arrayLength + 2];

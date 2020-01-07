@@ -30,3 +30,12 @@ class SelectionSortTest {
     System.out.println(Arrays.toString(array));
   }
 }
+
+class MergeSortTest {
+  public static void main(String[] args) {
+    int[] array = {3, 5, 4, 2, 1};
+    MergeSort mergeSort = new MergeSort();
+    mergeSort.process(array);
+    System.out.println(Arrays.toString(array));
+  }
+}
