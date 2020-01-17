@@ -130,3 +130,14 @@ class NewYearChaosTest {
 
   }
 }
+
+class MarkAndToysTest {
+
+  public static void main(String[] args) {
+    //1 12 5 111 200 1000 10
+    int MarkBudget = 50;
+    int[] toys = {1, 12, 5, 111, 200, 1000, 10};
+    MarkAndToys markAndToys = new MarkAndToys();
+    System.out.println(markAndToys.maximumToys(toys, MarkBudget));
+  }
+}
