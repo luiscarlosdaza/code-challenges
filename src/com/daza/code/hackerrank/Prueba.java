@@ -141,3 +141,35 @@ class MarkAndToysTest {
     System.out.println(markAndToys.maximumToys(toys, MarkBudget));
   }
 }
+
+class ComparatorTest {
+  public static void main(String[] args) {
+//    Player player1 = new Player("Smith", 20);
+//    Player player2 = new Player("Jones", 15);
+//    Player player3 = new Player("Jones", 20);
+    Player player1 = new Player("Amy ", 100);
+    Player player2 = new Player("David", 100);
+    Player player3 = new Player("Heraldo", 50);
+    Player player4 = new Player("Aakansha", 75);
+    Player player5 = new Player("Aleksa", 150);
+    Player[] players = {player1, player2, player3, player4, player5};
+
+    Arrays.sort(players, new Checker());
+
+    for(int i = 0; i < players.length; i++){
+      System.out.printf("%s %s\n", players[i].name, players[i].score);
+    }
+  }
+}
+
+class FraudulentActivityNotificationTest {
+
+  public static void main(String[] args) {
+    int days = 5;
+//    int[] expenditure = {1, 2, 3, 4, 4, 4};
+    int[] expenditure = {2, 3, 4, 2, 3, 6, 8, 4, 5};
+    FraudulentActivityNotification notification = new FraudulentActivityNotification();
+    int result = notification.process3(expenditure, days);
+    System.out.printf("Result: %d", result);
+  }
+}
